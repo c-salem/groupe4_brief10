@@ -27,4 +27,4 @@ Nous allons mettre en place une application de type "Stack Overflow" à partir u
  ⇒ on a rencontré des problèmes avec les API (code front-end) ;
  
  3. Une fois le problème résolu, on pû pusher l'image et commencer à déployer les ressources sur Azure 
- ⇒ à l'aide de WebApp et MariaDB ;
+ ⇒ à l'aide de WebApp et MariaDB;
