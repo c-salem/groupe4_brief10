@@ -36,4 +36,6 @@ Nous avons donc décider de monter notre image. Pour cela nous nous sommes basé
 - Configuration du code Frontend et liasion et à la webapp API.
 - Création d'images DEV/PROD sur Docker Hub [image dev](https://hub.docker.com/r/simplonp20group4/stackoverflowdev) et [image prod](https://hub.docker.com/r/simplonp20group4/stackoverflowprod).
 - Création logo et du Favicon.
-- Phase de test
+- Phase de tests
+
+Rendu : [Groupe de Ressources](https://portal.azure.com/#@simplonformations.onmicrosoft.com/resource/subscriptions/682603a3-d9f3-417f-98e8-a7b2398bc448/resourceGroups/Group4_brief10/overview)
