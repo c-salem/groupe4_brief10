@@ -1,77 +1,39 @@
-# groupe4_brief10
+# SimpOverFlow
+Par : [Ezekiel](https://www.github.com/ezekiel444) , [Aley](https://www.github.com/Aleey-bakugo) , [Mehdi](https://www.github.com/mehdizerari), [Salem](https://www.github.com/c-salem)
+## Présentation
+SimpOverFlow est une solution pour répondre aux problèmes informatique. ça fonctionne avec un système de questions-réponses. L'application est basée sur un clone de StackOverflow propulsé sur Azure via des containers Docker.
 
--Recherche du code d'un clone stackoverflow sur github (Mayank025).
-
--récupération du code et modification du code (API défaillante/ Backend).
-
--Configuration base de données MariaDB et liaison a la webapp Backend.
-
--Création d'images de Backend sur dockerhub (https://hub.docker.com/r/simplonp20group4/stackoverflowapi).
-
--Déploiement des ressources Azure et liaison de l'image(Backend à la Webapp.)
-
--Configuration du code Frontend et liasion et à la webapp API.
-
--Création d'images DEV/PROD sur dockerhub -https://hub.docker.com/r/simplonp20group4/stackoverflowdev
-                                          -https://hub.docker.com/r/simplonp20group4/stackoverflowprod                                           
--Configuration de la Webapp (App configuration).
-
--Création logo et du Favicon.
-
--Phase test
+## Fonctionnalités
+L'utilisateur peut s'inscrire, se connecter, poser des questions, répondre à des question.
+Lors de la création d'une question, l'utilisateur peut y associer des tags. Pour les réponses, l'utilisateur peut voter pour une réponse qu'il trouve utile à la résolution du problème.
+## Descriptif technique
+L'application est hébergé sur Azure en full PaaS, nous avons choisi un Service Plan de taille S1, sur lequel tourne deux WebApp (dont une avec un slot de DEV) basé sur trois images Docker (un front, un back et une API). Les données sont enregistrées sur un MariaDB (10.3, De base, 1 vCore(s), 5 Go)
 
 
 
+![https://cdn.discordapp.com/attachments/1014474367956156446/1017814385990836274/Diagramme_sans_nom_1.drawio.png](https://cdn.discordapp.com/attachments/1014474367956156446/1017814385990836274/Diagramme_sans_nom_1.drawio.png)
 
 
+## Comment s'est déroulé le projet
+Nous avons commencé listé les tâches puis nous avons estimé le temps qu'il nous fallait pour faire le projet, voici le résultat : 
+ - Déploiement Azure - 1 jour
+- Recherche et déploiement de la bonne image sur Docker HUB - 2 Jours 
+- Prise en main configuration du site (mise en place base de données) - 2 Jours
+- Phase de test - 1 Jours
+- Phase de rendu - 2 Jours
 
+Total : 8 Jours estimé
+Présentation 8 Septembre.
+Nous avons tester de faire un [planner](https://tasks.office.com/simplonformations.onmicrosoft.com/Home/PlanViews/MUGsbUZvLkS1fDTWyU5KVZcAFhl0?Type=PlanLink&Channel=Link&CreatedTime=637975464894230000) pour gérer le projet.
 
+Au début nous avons chercher une image sur Docker HUB qui correspond à nos besoins, mais aucune ne convenait (ne fonctionne pas, crash, incomplet).
 
-
-
-
-
-
-
-
-# BRIEF 10 - GROUPE 4
-Aley, Ezekiel, Salem, Mehdi
-
-## Enoncé
-
-Le boss en a marre que les mêmes questions reviennent sans cesse. Il s'est promis de mettre en place un outil interne de type "Stack Overflow" et de forcer les prochains questionneurs à l'utiliser.
-Il ne sait pas quel outil utiliser, et il attend des propositions. L'utilisation de Docker est parfaite dans ce cas, car c'est rapide et interchangeable.
-
-Nous allons mettre en place une application de type "Stack Overflow" à partir uniquement d'images docker présentes sur DockerHub, et la déployer dans Azure.
-
-
-## Livrables
-. 1 estimation du travail (liste + charge), validé avec le formateur.
-⇒ estimation à 6 1/2 journées
-. 1 script BASH ou POWERSHELL sur votre (nouveau?) compte GITHUB perso. 
-. 1 fichier README.md au même endroit (ce fichier README.md doit contenir un schéma de votre infrastructure).
-
-
-## Etapes
-
- 1. Chercher une image sur dockerHub
-⇒ pas d'aboutissement car ca ne nous a pas plu ;
-⇒ création de notre propre image et push sur DockerHub ;
-
- 2. Pour créer notre image, nous nous sommes rendus sur GitHub afin de trouver un code similaire à celui de stackOverFlow
- ⇒ on a rencontré des problèmes avec les API (code front-end) ;
- 
- 3. Une fois le problème résolu, on pû pusher l'image et commencer à déployer les ressources sur Azure 
- ⇒ à l'aide de WebApp et MariaDB;
-![Capture d’écran (42)](https://user-images.githubusercontent.com/110231576/189657345-0eb09987-145d-47b8-9261-b48bb5e49803.png)
-![Capture d’écran (43)](https://user-images.githubusercontent.com/110231576/189657383-e092aae4-760e-4058-ac90-ca3d2dcb3be3.png)
-![Capture d’écran (44)](https://user-images.githubusercontent.com/110231576/189657386-8788c2db-5811-4fb4-a0ea-04b59cdbf1fd.png)
-![Capture d’écran (45)](https://user-images.githubusercontent.com/110231576/189657389-a921a069-84d8-40ea-9e93-2307e23f03af.png)
-![Capture d’écran (46)](https://user-images.githubusercontent.com/110231576/189657392-17940bfe-2daf-4644-8e3f-6f53b7d3d466.png)
-![Capture d’écran (47)](https://user-images.githubusercontent.com/110231576/189657394-82168e70-9127-4bfd-bc3e-2dc0d09e38f9.png)
-![Capture d’écran (48)](https://user-images.githubusercontent.com/110231576/189657396-89ad55e6-38a2-4d94-b4e9-7716f5e3064c.png)
-![Diagramme_sans_nom (1) drawio (1)](https://user-images.githubusercontent.com/110231576/189662510-0455e892-094a-4490-aadb-e4d0733abb9d.png)
-
-
-
-
+Nous avons donc décider de monter notre image. Pour cela nous nous sommes basée sur le projet de [Mayank Aggarwal](https://github.com/Mayank0255?tab=repositories) qui propose un clone de StackOverflow sur Github. Voici les étapes que nous avons fait 
+- Récupération du code et  correction des bugs qui s'y trouvait (API / Back-end). 
+- Configuration de la db et la  liaison avec la Webapp backend. 
+- Montage de l'image [backend](https://hub.docker.com/r/simplonp20group4/stackoverflowapi) puis push sur Docker Hub.
+- Déploiement des ressources Azure avec la liaison de l'image backend.
+- Configuration du code Frontend et liasion et à la webapp API.
+- Création d'images DEV/PROD sur Docker Hub [image dev](https://hub.docker.com/r/simplonp20group4/stackoverflowdev) et [image prod](https://hub.docker.com/r/simplonp20group4/stackoverflowprod).
+- Création logo et du Favicon.
+- Phase de test
