@@ -1,14 +1,23 @@
 # groupe4_brief10
+
 -Recherche du code d'un clone stackoverflow sur github (Mayank025).
+
 -récupération du code et modification du code (API défaillante/ Backend).
+
 -Configuration base de données MariaDB et liaison a la webapp Backend.
+
 -Création d'images de Backend sur dockerhub (https://hub.docker.com/r/simplonp20group4/stackoverflowapi).
+
 -Déploiement des ressources Azure et liaison de l'image(Backend à la Webapp.)
+
 -Configuration du code Frontend et liasion et à la webapp API.
+
 -Création d'images DEV/PROD sur dockerhub -https://hub.docker.com/r/simplonp20group4/stackoverflowdev
                                           -https://hub.docker.com/r/simplonp20group4/stackoverflowprod                                           
 -Configuration de la Webapp (App configuration).
+
 -Création logo et du Favicon.
+
 -Phase test
 
 
