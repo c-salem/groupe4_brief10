@@ -27,9 +27,9 @@ Nous allons mettre en place une application de type "Stack Overflow" à partir u
  ⇒ on a rencontré des problèmes avec les API (code front-end) ;
  
  3. Une fois le problème résolu, on pû pusher l'image et commencer à déployer les ressources sur Azure 
- ⇒ à l'aide de WebApp et MariaDB;![Capture d’écran (42)](https://user-images.githubusercontent.com/110231576/189657345-0eb09987-145d-47b8-9261-b48bb5e49803.png)
-
- ![Capture d’écran (43)](https://user-images.githubusercontent.com/110231576/189657383-e092aae4-760e-4058-ac90-ca3d2dcb3be3.png)
+ ⇒ à l'aide de WebApp et MariaDB;
+![Capture d’écran (42)](https://user-images.githubusercontent.com/110231576/189657345-0eb09987-145d-47b8-9261-b48bb5e49803.png)
+![Capture d’écran (43)](https://user-images.githubusercontent.com/110231576/189657383-e092aae4-760e-4058-ac90-ca3d2dcb3be3.png)
 ![Capture d’écran (44)](https://user-images.githubusercontent.com/110231576/189657386-8788c2db-5811-4fb4-a0ea-04b59cdbf1fd.png)
 ![Capture d’écran (45)](https://user-images.githubusercontent.com/110231576/189657389-a921a069-84d8-40ea-9e93-2307e23f03af.png)
 ![Capture d’écran (46)](https://user-images.githubusercontent.com/110231576/189657392-17940bfe-2daf-4644-8e3f-6f53b7d3d466.png)
