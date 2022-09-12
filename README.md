@@ -70,5 +70,8 @@ Nous allons mettre en place une application de type "Stack Overflow" à partir u
 ![Capture d’écran (46)](https://user-images.githubusercontent.com/110231576/189657392-17940bfe-2daf-4644-8e3f-6f53b7d3d466.png)
 ![Capture d’écran (47)](https://user-images.githubusercontent.com/110231576/189657394-82168e70-9127-4bfd-bc3e-2dc0d09e38f9.png)
 ![Capture d’écran (48)](https://user-images.githubusercontent.com/110231576/189657396-89ad55e6-38a2-4d94-b4e9-7716f5e3064c.png)
+![Diagramme_sans_nom (1) drawio (1)](https://user-images.githubusercontent.com/110231576/189662510-0455e892-094a-4490-aadb-e4d0733abb9d.png)
+
+
 
 
