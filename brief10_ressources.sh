@@ -1,5 +1,5 @@
 echo "Entrez le nom de votre groupe de ressource dans lequel vous voulez créer vos ressources"
-read nom_rg
+read nom_gr
 echo "Entrez l'emplacement où vous voulez créer les ressouces"
 read emplacement
 echo "Entrez le nom que vous voulez donner au serveur MariaDB"
